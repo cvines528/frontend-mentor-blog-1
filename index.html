@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container" class="h-screen grid grid-cols-1 md:grid-cols-3 tracking-wide">
+        <div id="summary-card-container" class="h-full col-start-2 py-20 place-self-center items-center md: py-3 px-3">
+            <div id="hero-container" >
+                <div id="hero-image">
+                    <img src="images/illustration-hero.svg" alt="" class="w-full rounded-t-lg">
+                </div>
+            </div>
+            <div id="order-summary-info-container" class="grid grid-cols-1 justify-items-center px-20 py-10 bg-white rounded-b-lg  shadow-2xl">
+                <div id="order-summary-title">
+                    <h1 class="text-xl">Order Summary</h1>
+                </div>
+                <div id="order-summary-description">
+                    <p class="text-center pt-2 pb-6 tracking-normal">You can now listen to millions of songs,<br> audiobooks, and podcasts on any device<br> anywhere you like!</p>
+                </div>
+                <div id="plan-purchase-container" class="grid grid-cols-3 rounded-lg mb-10">
+                    <div id="product-icon">
+                        <img src="images/icon-music.svg" alt="" class="py-5 pl-5">
+                    </div>
+                    <div id="plan-description" class="py-5 pr-5">
+                        <h2 class="md:text-sm tracking-normal text-xs">Annual Plan</h2>
+                        <p class="md:text-sm text-gray-600 text-xs">$59.99/year</p>
+                    </div>
+                    <div id="product-change" class="grid place-content-center">
+                        <a href="#">Change</a>
+                    </div>
+                </div>
+                <div id="proceed-payment-container" class="w-full ">
+                    <button class="rounded-lg mb-5 p-3 px-6 w-full text-white shadow-2xl">Proceed to Payment</button>
+                </div>
+                <div id="cancel-order">
+                    <a href="#">Cancel Order</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
